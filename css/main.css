@@ -17,8 +17,6 @@ body {
   margin: 0;
 }
 
-
-
 .img-flex {
   display: block;
   width: 100%;
@@ -47,7 +45,7 @@ ul {
 }
 
 .contact-top p {
-  color: #fff;
+  color: #ddd;
   margin: 0 auto .5rem;
   font-size: .95rem;
   display: inline-block;
@@ -82,41 +80,20 @@ ul {
     width: 85%;
     margin: auto;
   }
-
-  .contact-top p {
-    font-size: 1.05rem;
-  }
 }
-
-@media only screen and (min-width: 68em) {
-
-  .contact-top p {
-    font-size: 1.1rem;
-  }
-
-}
-
-@media only screen and (min-width: 90em) {
-
-  .contact-top p {
-    font-size: 1.2rem;
-  }
-
-}
-
 
 .header {
   background-color: #888;
-  padding-top: .75rem;
   text-align: center;
   overflow: hidden;
+  position: relative;
 }
 
 h1 {
   font-family: "Merienda One", cursive;
   font-weight: bold;
   font-size: 2.1rem;
-  margin: 0 0 .75rem;
+  margin: 1rem 0;
   padding: .5rem;
   border: dotted  #fff 1px;
   display: inline-block;
@@ -126,28 +103,24 @@ h1 {
   color: #fff;
 }
 
-.header li {
-
-}
-
 .header a {
   text-decoration: none;
   color: #fff;
   background-color: #777;
   padding: .5rem;
-  font-size: 1rem;
+  font-size: .9rem;
   display: block;
   text-transform: uppercase;
 }
 
 .header .open-page {
   color: #fff;
-  background-color: #444;
+  background-color: #666;
 }
 
 .header a:hover {
   color: #fff;
-  background-color: #444;
+  background-color: #666;
 }
 
 .nav {
@@ -179,4 +152,90 @@ h1 {
 
 .nav-check:checked ~ .nav-label .nav-close {
   display: block;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .nav li {
+    float: left;
+    width: 50%;
+    white-space: nowrap;
+  }
+
+ .nav a {
+   padding: .75rem;
+ }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .nav li {
+    width: 33.3333%;
+  }
+
+  .nav-label {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  .nav-right {
+    float: right;
+    width: 25%;
+  }
+
+  .half-nav li {
+    float: none;
+    margin: auto;
+    width: 100%;
+  }
+
+  .nav-left {
+    float: left;
+    width: 25%;
+  }
+
+  .nav {
+    position: absolute;
+    width: 85%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    left: 50%;
+  }
+
+  .header a {
+    background-color: inherit;
+  }
+
+  .half-nav li:nth-child(2) {
+    border-top: dotted #444 1px;
+    border-bottom: dotted #444 1px;
+  }
+  
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
+
 }
