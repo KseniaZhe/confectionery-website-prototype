@@ -122,11 +122,6 @@ h1 {
   text-transform: uppercase;
 }
 
-.header .open-page {
-  color: #444;
-  background-color: #999;
-}
-
 .header a:hover {
   color: #444;
   background-color: #999;
@@ -249,50 +244,164 @@ h1 {
   position: relative;
   text-align: center;
   overflow: hidden;
-  max-height: 350px;
+  max-height: 380px;
 }
 
 .banner-body {
   position: absolute;
-  width: 80%;
+  width: 93%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.banner-body h2 {
-  color: #444;
-  font-size: 1.8rem;
-  margin: 0 0 .5rem;
-}
-
-.banner-body p {
-  color: #777;
-  text-transform: uppercase;
-  font-size: .9rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.5rem;
   margin: 0;
+}
+
+.banner:hover .banner-body {
+  color: rgba(255, 255, 255, 1);
 }
 
 @media only screen and (min-width: 25em) {
 
-  .banner-body h2 {
-    font-size: 2.5rem;
-  }
-
-  .banner-body p {
-    font-size: 1.1rem;
+  .banner-body {
+    font-size: 1.85rem;
   }
 
 }
 
-@media only screen and (min-width: 49em) {
+@media only screen and (min-width: 38em) {
 
-  .banner-body h2 {
+  .banner-body {
     font-size: 2.5rem;
   }
 
-  .banner-body p {
-    font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .banner-body {
+    font-size: 3.25rem;
   }
 
+}
+
+.about {
+  text-align: center;
+  background-color: #999;
+  overflow: hidden;
+}
+
+.about-body {
+  text-align: left;
+  padding: 0 .5rem;
+}
+
+.about h2 {
+  margin: 2rem 0;
+  padding: 1rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #444;
+  border-top: dotted #fff 1px;
+  border-bottom: dotted #fff 1px;
+  }
+
+.about h3 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  color: #444;
+}
+
+i {
+  font-family: "Merienda One", cursive;
+  font-size: .8rem;
+}
+
+strong {
+  font-size: 1.1rem;
+}
+
+.about-body p {
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .img-about-sq {
+    display: inline-block;
+    width: 49.5%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .wrap-about-img {
+    display: block;
+    margin: auto;
+    width: 33em;
+  }
+
+  .about-body {
+    width: 33rem;
+    margin: auto;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .wrap-about-img,
+  .about-body {
+    float: left;
+    width: 50%;
+  }
+
+  .about-body {
+    padding: 0 2rem;
+  }
+
+}
+
+@media only screen and (min-width: 72.5em) {
+
+  .wrap-about-img,
+  .about-body {
+    float: none;
+    width: 100%;
+  }
+
+  .img-about-sq {
+    width: 28.55%;
+  }
+
+  .img-about-rc {
+    width: 42.75%;
+    display: inline-block;
+  }
+
+  .img-about-left {
+    float: left;
+  }
+
+  .img-about-right {
+    float: right;
+  }
+
+  .about-body p {
+    display: inline-block;
+    width: 48.5%;
+    vertical-align: top;
+  }
+
+  .about-body {
+    padding: 0 1rem;
+  }
+
+  .about-body-first {
+    margin-right: 1rem;
+  }
 }
