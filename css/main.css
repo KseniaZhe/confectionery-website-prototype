@@ -104,6 +104,18 @@ ul {
     width: 85%;
     margin: auto;
   }
+
+  .contact-top li {
+    width: 25px;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  .contact-top li {
+    width: 30px;
+  }
+
 }
 
 /* ----------------------------------------------- header and nav -------------- */
