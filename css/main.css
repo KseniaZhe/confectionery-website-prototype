@@ -568,13 +568,9 @@ h2 {
   margin-left: .35rem;
 }
 
-.hours dt {
-  font-size: 1.1rem;
-}
-
 .smallcaps {
   text-transform: uppercase;
-  font-size: .75rem;
+  font-size: .65rem;
 }
 
 .hours h3,
