@@ -112,6 +112,11 @@ ul {
 
 @media only screen and (min-width: 60em) {
 
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
   .contact-top li {
     width: 30px;
   }
@@ -217,11 +222,6 @@ h1 {
 }
 
 @media only screen and (min-width: 60em) {
-
-  html {
-    font-size: 120%;
-    line-height: 1.5;
-  }
 
   .nav-right {
     float: right;
