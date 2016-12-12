@@ -151,7 +151,7 @@ h1 {
   color: #fff;
   background-color: #777;
   padding: .5rem;
-  font-size: 1rem;
+  font-size: .9rem;
   display: block;
   text-transform: uppercase;
 }
@@ -225,7 +225,7 @@ h1 {
 
   .nav-right {
     float: right;
-    width: 25%;
+    width: 26%;
   }
 
   .half-nav li {
@@ -236,12 +236,12 @@ h1 {
 
   .nav-left {
     float: left;
-    width: 25%;
+    width: 26%;
   }
 
   .nav {
     position: absolute;
-    width: 85%;
+    width: 93%;
     top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -250,6 +250,7 @@ h1 {
 
   .header a {
     background-color: inherit;
+    font-size: .95rem;
   }
 
   .half-nav li:nth-child(2) {
@@ -259,11 +260,23 @@ h1 {
 
 }
 
+@media only screen and (min-width: 73em) {
+
+  .nav {
+    width: 80%;
+  }
+
+}
+
 @media only screen and (min-width: 90em) {
 
   html {
     font-size: 130%;
     line-height: 1.5;
+  }
+
+  .nav {
+    width: 75%;
   }
 
 }
